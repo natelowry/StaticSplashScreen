@@ -24,10 +24,16 @@ namespace StaticSplashScreen
         public MainWindow()
         {
             DoSomethingThatTakesALongTime();
+            DoSomethingElseThatTakesALongTime();
             InitializeComponent();
         }
 
         private static void DoSomethingThatTakesALongTime()
+        {
+            Thread.Sleep(5000);
+        }
+
+        private static void DoSomethingElseThatTakesALongTime()
         {
             Thread.Sleep(5000);
         }
